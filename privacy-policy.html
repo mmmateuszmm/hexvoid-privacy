@@ -1,84 +1,158 @@
-HEXVOID
-PRIVACY POLICY & TERMS OF SERVICE
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HEXVOID – Privacy Policy & Terms of Service</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0a0a0a;
+      color: #c8c8c8;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 14px;
+      line-height: 1.8;
+      padding: 40px 20px;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 28px;
+      color: #ffffff;
+      letter-spacing: 0.3em;
+      border-bottom: 1px solid #333;
+      padding-bottom: 16px;
+      margin-bottom: 8px;
+    }
+    .subtitle {
+      color: #555;
+      font-size: 11px;
+      letter-spacing: 0.2em;
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 13px;
+      color: #ffffff;
+      letter-spacing: 0.2em;
+      margin: 36px 0 12px;
+      text-transform: uppercase;
+      border-left: 2px solid #fff;
+      padding-left: 12px;
+    }
+    p { margin-bottom: 12px; color: #aaa; }
+    ul { margin: 8px 0 12px 20px; color: #aaa; }
+    ul li { margin-bottom: 6px; }
+    a { color: #888; text-decoration: underline; }
+    a:hover { color: #fff; }
+    .updated {
+      font-size: 11px;
+      color: #444;
+      margin-top: 60px;
+      border-top: 1px solid #1a1a1a;
+      padding-top: 20px;
+      letter-spacing: 0.1em;
+    }
+    .contact-box {
+      border: 1px solid #222;
+      padding: 16px 20px;
+      margin-top: 12px;
+      background: #111;
+    }
+  </style>
+</head>
+<body>
 
-1. Introduction
-HEXVOID ("the Game", "we", "us", "our") is a mobile arcade game developed as an independent project. This Privacy Policy explains what data we collect, how we use it, and your rights regarding that data.
+  <h1>HEXVOID</h1>
+  <p class="subtitle">PRIVACY POLICY &amp; TERMS OF SERVICE</p>
 
-By downloading or playing HEXVOID, you agree to the practices described in this document. If you do not agree, please do not use the Game.
+  <h2>1. Introduction</h2>
+  <p>HEXVOID ("the Game", "we", "us", "our") is a mobile arcade game developed as an independent project. This Privacy Policy explains what data we collect, how we use it, and your rights regarding that data.</p>
+  <p>By downloading or playing HEXVOID, you agree to the practices described in this document. If you do not agree, please do not use the Game.</p>
 
-2. Data We Collect
-We collect the following categories of information:
+  <h2>2. Data We Collect</h2>
+  <p>We collect the following categories of information:</p>
+  <ul>
+    <li><strong>Account data</strong> — nickname (chosen by you), username tag, and optional Google account identifier (UID) if you sign in with Google.</li>
+    <li><strong>Game progress</strong> — high scores, XP level, owned skins and items, achievement progress, daily login streak, game settings.</li>
+    <li><strong>Gameplay statistics</strong> — number of games played, walls passed, coins collected, play time. Used for leaderboards and achievements only.</li>
+    <li><strong>Device &amp; technical data</strong> — crash reports (stack traces, device model, OS version) collected automatically by Firebase Crashlytics to fix bugs.</li>
+    <li><strong>Analytics events</strong> — anonymised in-game events (e.g. "game started", "shop opened") collected by Firebase Analytics to understand how the game is used.</li>
+    <li><strong>Advertising data</strong> — if you accept personalised ads (GDPR consent), Google AdMob may collect advertising identifiers and usage data. If you decline, only non-personalised ads are shown and no profiling occurs.</li>
+    <li><strong>Country / region</strong> — detected from your IP address via a free geolocation service (ip2c.org) solely to display local leaderboards. We do not store your IP address.</li>
+  </ul>
+  <p>We do <strong>not</strong> collect: real name, email address (unless provided by Google Sign-In), phone number, location (GPS), contacts, camera, or microphone data.</p>
 
-Account data — nickname (chosen by you), username tag, and optional Google account identifier (UID) if you sign in with Google.
-Game progress — high scores, XP level, owned skins and items, achievement progress, daily login streak, game settings.
-Gameplay statistics — number of games played, walls passed, coins collected, play time. Used for leaderboards and achievements only.
-Device & technical data — crash reports (stack traces, device model, OS version) collected automatically by Firebase Crashlytics to fix bugs.
-Analytics events — anonymised in-game events (e.g. "game started", "shop opened") collected by Firebase Analytics to understand how the game is used.
-Advertising data — if you accept personalised ads (GDPR consent), Google AdMob may collect advertising identifiers and usage data. If you decline, only non-personalised ads are shown and no profiling occurs.
-Country / region — detected from your IP address via a free geolocation service (ip2c.org) solely to display local leaderboards. We do not store your IP address.
-We do not collect: real name, email address (unless provided by Google Sign-In), phone number, location (GPS), contacts, camera, or microphone data.
+  <h2>3. How We Use Your Data</h2>
+  <ul>
+    <li>To save and sync your game progress across devices (Firebase Firestore).</li>
+    <li>To display global, weekly, and local leaderboards.</li>
+    <li>To show relevant or non-personalised advertisements (Google AdMob).</li>
+    <li>To fix crashes and improve game stability (Firebase Crashlytics).</li>
+    <li>To understand which game features are popular (Firebase Analytics).</li>
+  </ul>
+  <p>We do <strong>not</strong> sell your data to third parties. We do not use your data for any purpose other than operating and improving HEXVOID.</p>
 
-3. How We Use Your Data
-To save and sync your game progress across devices (Firebase Firestore).
-To display global, weekly, and local leaderboards.
-To show relevant or non-personalised advertisements (Google AdMob).
-To fix crashes and improve game stability (Firebase Crashlytics).
-To understand which game features are popular (Firebase Analytics).
-We do not sell your data to third parties. We do not use your data for any purpose other than operating and improving HEXVOID.
+  <h2>4. Third-Party Services</h2>
+  <p>HEXVOID uses the following third-party services, each with their own privacy policies:</p>
+  <ul>
+    <li><strong>Google Firebase</strong> (Auth, Firestore, Analytics, Crashlytics) — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></li>
+    <li><strong>Google AdMob</strong> — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+    <li><strong>Google Sign-In</strong> — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+    <li><strong>ip2c.org</strong> — free IP-to-country lookup, no personal data stored.</li>
+  </ul>
 
-4. Third-Party Services
-HEXVOID uses the following third-party services, each with their own privacy policies:
+  <h2>5. Advertising &amp; GDPR Consent</h2>
+  <p>On first launch, the Game presents a consent dialog in compliance with the EU General Data Protection Regulation (GDPR) and Google's advertising policies.</p>
+  <ul>
+    <li><strong>Accept</strong> — personalised ads shown based on your interests. AdMob may process your advertising identifier.</li>
+    <li><strong>Decline</strong> — only non-personalised ads shown. No profiling. The Game remains fully playable.</li>
+  </ul>
+  <p>You can change your ad preference at any time in the Game's Settings → Privacy.</p>
 
-Google Firebase (Auth, Firestore, Analytics, Crashlytics) — firebase.google.com/support/privacy
-Google AdMob — policies.google.com/privacy
-Google Sign-In — policies.google.com/privacy
-ip2c.org — free IP-to-country lookup, no personal data stored.
-5. Advertising & GDPR Consent
-On first launch, the Game presents a consent dialog in compliance with the EU General Data Protection Regulation (GDPR) and Google's advertising policies.
+  <h2>6. Data Retention &amp; Deletion</h2>
+  <p>Guest data is stored only on your device (localStorage). If you clear the app's storage in Android Settings, all local guest data is permanently deleted.</p>
+  <p>Google account data is stored in Firebase Firestore. To request deletion of your cloud data, contact us at the address below. We will delete your record within 30 days.</p>
 
-Accept — personalised ads shown based on your interests. AdMob may process your advertising identifier.
-Decline — only non-personalised ads shown. No profiling. The Game remains fully playable.
-You can change your ad preference at any time in the Game's Settings → Privacy.
+  <h2>7. Children's Privacy</h2>
+  <p>HEXVOID is rated for ages 12 and above. We do not knowingly collect personal data from children under 13. If you believe a child under 13 has submitted data, contact us and we will delete it promptly.</p>
 
-6. Data Retention & Deletion
-Guest data is stored only on your device (localStorage). If you clear the app's storage in Android Settings, all local guest data is permanently deleted.
+  <h2>8. Your Rights (GDPR)</h2>
+  <p>If you are in the European Economic Area, you have the right to:</p>
+  <ul>
+    <li>Access the personal data we hold about you.</li>
+    <li>Request correction of inaccurate data.</li>
+    <li>Request deletion of your data ("right to be forgotten").</li>
+    <li>Withdraw advertising consent at any time.</li>
+    <li>Lodge a complaint with your local data protection authority.</li>
+  </ul>
 
-Google account data is stored in Firebase Firestore. To request deletion of your cloud data, contact us at the address below. We will delete your record within 30 days.
+  <h2>9. Security</h2>
+  <p>All data transmitted to Firebase is encrypted in transit (TLS). Firestore security rules ensure that each user can only read and write their own data. We do not store passwords — authentication is handled entirely by Google.</p>
 
-7. Children's Privacy
-HEXVOID is rated for ages 12 and above. We do not knowingly collect personal data from children under 13. If you believe a child under 13 has submitted data, contact us and we will delete it promptly.
+  <h2>10. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. The "Last updated" date at the bottom of this page will reflect any changes. Continued use of the Game after changes constitutes acceptance of the updated policy.</p>
 
-8. Your Rights (GDPR)
-If you are in the European Economic Area, you have the right to:
+  <h2>11. Terms of Service</h2>
+  <p>By playing HEXVOID, you agree to the following terms:</p>
+  <ul>
+    <li><strong>Fair play</strong> — you will not cheat, hack, or manipulate game scores. Detected cheating results in account removal from leaderboards.</li>
+    <li><strong>Nickname</strong> — your chosen nickname must not contain offensive, hateful, or illegal content. We reserve the right to remove such nicknames.</li>
+    <li><strong>Virtual items</strong> — all in-game coins, gems, skins, and items are virtual goods with no real-world monetary value and cannot be transferred or refunded.</li>
+    <li><strong>In-app purchases</strong> — premium features (Premium Pass, Ads-Off) are non-refundable once activated, except where required by applicable law.</li>
+    <li><strong>Service availability</strong> — we do not guarantee uninterrupted access to the Game or leaderboard services. We may modify or discontinue features at any time.</li>
+    <li><strong>Prohibited conduct</strong> — you may not reverse-engineer, decompile, or attempt to extract the Game's source code.</li>
+    <li><strong>Governing law</strong> — these Terms are governed by applicable law. Disputes shall be resolved in the jurisdiction where the developer resides.</li>
+  </ul>
 
-Access the personal data we hold about you.
-Request correction of inaccurate data.
-Request deletion of your data ("right to be forgotten").
-Withdraw advertising consent at any time.
-Lodge a complaint with your local data protection authority.
-9. Security
-All data transmitted to Firebase is encrypted in transit (TLS). Firestore security rules ensure that each user can only read and write their own data. We do not store passwords — authentication is handled entirely by Google.
+  <h2>12. Contact</h2>
+  <p>For privacy requests, data deletion, or any questions:</p>
+  <div class="contact-box">
+    <p>📧 <strong>Email:</strong> <a href="mailto:mmmateuszmm123@gmail.com">mmmateuszmm123@gmail.com</a></p>
+    <p>👤 <strong>Administrator:</strong> Mateusz Michalski</p>
+    <p>🌐 <strong>Website:</strong> <a href="https://mmmateuszmm.github.io/hexvoid-privacy/privacy-policy.html" target="_blank">hexvoid-privacy</a></p>
+  </div>
 
-10. Changes to This Policy
-We may update this Privacy Policy from time to time. The "Last updated" date at the bottom of this page will reflect any changes. Continued use of the Game after changes constitutes acceptance of the updated policy.
+  <p class="updated">Last updated: March 2026 &nbsp;|&nbsp; HEXVOID &nbsp;|&nbsp; All rights reserved.</p>
 
-11. Terms of Service
-By playing HEXVOID, you agree to the following terms:
-
-Fair play — you will not cheat, hack, or manipulate game scores. Detected cheating results in account removal from leaderboards.
-Nickname — your chosen nickname must not contain offensive, hateful, or illegal content. We reserve the right to remove such nicknames.
-Virtual items — all in-game coins, gems, skins, and items are virtual goods with no real-world monetary value and cannot be transferred or refunded.
-In-app purchases — premium features (Premium Pass, Ads-Off) are non-refundable once activated, except where required by applicable law.
-Service availability — we do not guarantee uninterrupted access to the Game or leaderboard services. We may modify or discontinue features at any time.
-Prohibited conduct — you may not reverse-engineer, decompile, or attempt to extract the Game's source code.
-Governing law — these Terms are governed by applicable law. Disputes shall be resolved in the jurisdiction where the developer resides.
-12. Contact
-For privacy requests, data deletion, or any questions:
-
-📧 Email: mmmateuszmm123@gmail.com
-
-👤 Administrator: Mateusz Michalski
-
-🌐 Website: hexvoid-privacy
-
-Last updated: March 2026  |  HEXVOID  |  All rights reserved.
+</body>
+</html>
