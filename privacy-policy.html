@@ -72,32 +72,38 @@
   <h2>2. Data We Collect</h2>
   <p>We collect the following categories of information:</p>
   <ul>
-    <li><strong>Account data</strong> — nickname (chosen by you), username tag, and optional Google account identifier (UID) if you sign in with Google.</li>
+    <li><strong>Account data</strong> — nickname (chosen by you), username tag, and optional Google account identifier (UID) and email address if you sign in with Google.</li>
     <li><strong>Game progress</strong> — high scores, XP level, owned skins and items, achievement progress, daily login streak, game settings.</li>
     <li><strong>Gameplay statistics</strong> — number of games played, walls passed, coins collected, play time. Used for leaderboards and achievements only.</li>
+    <li><strong>Purchase data</strong> — when you make in-app purchases, transaction status and entitlement information is processed by Google Play and RevenueCat. We do not store payment card or bank account details.</li>
     <li><strong>Device &amp; technical data</strong> — crash reports (stack traces, device model, OS version) collected automatically by Firebase Crashlytics to fix bugs.</li>
     <li><strong>Analytics events</strong> — anonymised in-game events (e.g. "game started", "shop opened") collected by Firebase Analytics to understand how the game is used.</li>
     <li><strong>Advertising data</strong> — if you accept personalised ads (GDPR consent), Google AdMob may collect advertising identifiers and usage data. If you decline, only non-personalised ads are shown and no profiling occurs.</li>
+    <li><strong>Push notification token</strong> — if you allow push notifications, Firebase Cloud Messaging stores a device token on our server to deliver notifications such as weekly leaderboard results.</li>
     <li><strong>Country / region</strong> — detected from your IP address via a free geolocation service (ip2c.org) solely to display local leaderboards. We do not store your IP address.</li>
   </ul>
-  <p>We do <strong>not</strong> collect: real name, email address (unless provided by Google Sign-In), phone number, location (GPS), contacts, camera, or microphone data.</p>
+  <p>We do <strong>not</strong> collect: real name, phone number, location (GPS), contacts, camera, or microphone data.</p>
 
   <h2>3. How We Use Your Data</h2>
   <ul>
     <li>To save and sync your game progress across devices (Firebase Firestore).</li>
     <li>To display global, weekly, and local leaderboards.</li>
+    <li>To process and manage in-app purchases and subscriptions (RevenueCat, Google Play).</li>
     <li>To show relevant or non-personalised advertisements (Google AdMob).</li>
+    <li>To send push notifications about weekly results and game updates (Firebase Cloud Messaging).</li>
     <li>To fix crashes and improve game stability (Firebase Crashlytics).</li>
     <li>To understand which game features are popular (Firebase Analytics).</li>
+    <li>To verify app integrity and prevent abuse (Firebase App Check with Google Play Integrity).</li>
   </ul>
   <p>We do <strong>not</strong> sell your data to third parties. We do not use your data for any purpose other than operating and improving HEXVOID.</p>
 
   <h2>4. Third-Party Services</h2>
   <p>HEXVOID uses the following third-party services, each with their own privacy policies:</p>
   <ul>
-    <li><strong>Google Firebase</strong> (Auth, Firestore, Analytics, Crashlytics) — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></li>
+    <li><strong>Google Firebase</strong> (Auth, Firestore, Analytics, Crashlytics, Cloud Messaging, App Check) — <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">firebase.google.com/support/privacy</a></li>
     <li><strong>Google AdMob</strong> — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
     <li><strong>Google Sign-In</strong> — <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></li>
+    <li><strong>RevenueCat</strong> (in-app purchase &amp; subscription management) — <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">revenuecat.com/privacy</a></li>
     <li><strong>ip2c.org</strong> — free IP-to-country lookup, no personal data stored.</li>
   </ul>
 
@@ -107,11 +113,12 @@
     <li><strong>Accept</strong> — personalised ads shown based on your interests. AdMob may process your advertising identifier.</li>
     <li><strong>Decline</strong> — only non-personalised ads shown. No profiling. The Game remains fully playable.</li>
   </ul>
-  <p>You can change your ad preference at any time in the Game's Settings → Privacy.</p>
+  <p>You can change your ad preference at any time in the Game's Settings.</p>
 
   <h2>6. Data Retention &amp; Deletion</h2>
   <p>Guest data is stored only on your device (localStorage). If you clear the app's storage in Android Settings, all local guest data is permanently deleted.</p>
   <p>Google account data is stored in Firebase Firestore. To request deletion of your cloud data, contact us at the address below. We will delete your record within 30 days.</p>
+  <p>Purchase and subscription history is retained by Google Play and RevenueCat in accordance with their respective retention policies.</p>
 
   <h2>7. Children's Privacy</h2>
   <p>HEXVOID is rated for ages 12 and above. We do not knowingly collect personal data from children under 13. If you believe a child under 13 has submitted data, contact us and we will delete it promptly.</p>
@@ -123,11 +130,12 @@
     <li>Request correction of inaccurate data.</li>
     <li>Request deletion of your data ("right to be forgotten").</li>
     <li>Withdraw advertising consent at any time.</li>
+    <li>Disable push notifications via device settings at any time.</li>
     <li>Lodge a complaint with your local data protection authority.</li>
   </ul>
 
   <h2>9. Security</h2>
-  <p>All data transmitted to Firebase is encrypted in transit (TLS). Firestore security rules ensure that each user can only read and write their own data. We do not store passwords — authentication is handled entirely by Google.</p>
+  <p>All data transmitted to Firebase is encrypted in transit (TLS). Firestore security rules ensure that each user can only read and write their own data. We do not store passwords — authentication is handled entirely by Google. Additional measures include score integrity verification and app instance validation via Firebase App Check.</p>
 
   <h2>10. Changes to This Policy</h2>
   <p>We may update this Privacy Policy from time to time. The "Last updated" date at the bottom of this page will reflect any changes. Continued use of the Game after changes constitutes acceptance of the updated policy.</p>
@@ -139,6 +147,7 @@
     <li><strong>Nickname</strong> — your chosen nickname must not contain offensive, hateful, or illegal content. We reserve the right to remove such nicknames.</li>
     <li><strong>Virtual items</strong> — all in-game coins, gems, skins, and items are virtual goods with no real-world monetary value and cannot be transferred or refunded.</li>
     <li><strong>In-app purchases</strong> — premium features (Premium Pass, Ads-Off) are non-refundable once activated, except where required by applicable law.</li>
+    <li><strong>Subscriptions</strong> — Premium Pass is an auto-renewing monthly subscription. You can cancel at any time via Google Play &rarr; Subscriptions. Cancellation takes effect at the end of the current billing period. No partial refunds are given for unused time.</li>
     <li><strong>Service availability</strong> — we do not guarantee uninterrupted access to the Game or leaderboard services. We may modify or discontinue features at any time.</li>
     <li><strong>Prohibited conduct</strong> — you may not reverse-engineer, decompile, or attempt to extract the Game's source code.</li>
     <li><strong>Governing law</strong> — these Terms are governed by applicable law. Disputes shall be resolved in the jurisdiction where the developer resides.</li>
@@ -151,7 +160,7 @@
     <p>👤 <strong>Administrator:</strong> Mateusz Michalski</p>
   </div>
 
-  <p class="updated">Last updated: March 2026 &nbsp;|&nbsp; HEXVOID &nbsp;|&nbsp; All rights reserved.</p>
+  <p class="updated">Last updated: March 29, 2026 &nbsp;|&nbsp; HEXVOID &nbsp;|&nbsp; All rights reserved.</p>
 
 </body>
 </html>
